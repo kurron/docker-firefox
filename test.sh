@@ -13,7 +13,7 @@ xhost +
 CMD="docker run --env HOME=/home/powerless \
                 --env DISPLAY=unix${DISPLAY} \
                 --interactive \
-                --name Chromium \
+                --name Firefox \
                 --net "host" \
                 --rm \
                 --tty \

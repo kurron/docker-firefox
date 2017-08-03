@@ -2,10 +2,12 @@ FROM kurron/docker-azul-jdk-8-build:latest
 
 MAINTAINER Ron Kurr <kurr@kurron.org>
 
-ENTRYPOINT ["firefox"]
+ENTRYPOINT ["firefox", "https://www.youtube.com/html5"]
 
 USER root
 
-RUN apt-get update && apt install --yes firefox libpulse0 pulseaudio
+ENV DEBIAN_FRONTEND noninteractive
+
+RUN apt-get update && apt install --yes firefox libpulse0 pulseaudio ubuntu-restricted-extras
 
 USER powerless
