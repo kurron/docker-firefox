@@ -8,6 +8,8 @@ USER root
 
 ENV DEBIAN_FRONTEND noninteractive
 
-RUN apt-get update && apt install --yes firefox libpulse0 pulseaudio ubuntu-restricted-extras
+RUN apt-get update && \
+    apt-get install --yes firefox libpulse0 pulseaudio ubuntu-restricted-extras && \
+    apt-get clean
 
 USER powerless
