@@ -14,7 +14,7 @@ Docker will automatically install the newly built image into the cache.
 
 ## Launching The Image
 
-`./test/sh` will launch the newly created image and `./run.sh` will run a
+`./test.sh` will launch the newly created image and `./run.sh` will run a
 pre-made image.
 
 # Troubleshooting
